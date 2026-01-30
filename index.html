@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>界月委託招標所｜試營運</title>
-  <meta name="description" content="你提需求，我們幫你公開招標。繪師帶著報價/檔期/作品集來投標，你選合作。" />
+  <meta name="description" content="你提需求，我們幫你公開招標。繪師/工程師帶著報價、檔期、作品集來投標，你只要挑最適合的合作。" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="界月委託招標所｜試營運" />
@@ -15,110 +15,121 @@
 </head>
 
 <body>
+  <!-- Topbar -->
   <div class="topbar">
-    <div class="wrap inner">
+    <div class="wrap topbarInner">
       <div class="brand">
-        <span class="dot"></span>
-        <span>界月委託招標所</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span class="brandText">界月委託招標所</span>
       </div>
 
-      <nav aria-label="頁面導覽">
+      <nav class="nav" aria-label="頁面導覽">
         <a href="#how">怎麼用</a>
         <a href="#categories">可招標項目</a>
+        <a href="#partners">可投標者名錄</a>
+        <a href="#list-preview">公開名單</a>
         <a href="#faq">常見問題</a>
+        <a href="#feedback">反饋</a>
       </nav>
 
-      <div class="top-actions">
-        <a class="btn" id="btnList" href="#" target="_blank" rel="noreferrer">查看公開名單</a>
+      <div class="topActions">
+        <a class="btn" id="btnList" href="#" target="_blank" rel="noreferrer">公開名單</a>
         <a class="btn primary" id="btnForm" href="#" target="_blank" rel="noreferrer">發起招標</a>
       </div>
     </div>
   </div>
 
+  <!-- Hero -->
   <header class="hero">
     <div class="wrap">
       <div class="heroGrid">
-        <div class="card heroMain">
-          <div class="kicker"><span class="line"></span><span>TRIAL OPERATION</span></div>
+        <section class="card heroMain" aria-label="主視覺">
+          <div class="kicker">
+            <span class="line" aria-hidden="true"></span>
+            <span>TRIAL OPERATION</span>
+          </div>
 
           <h1>你提需求，我們幫你公開招標。</h1>
 
           <p class="sub">
-            你只要把需求填一次，我們會代發公開招標。繪師帶著
+            你只要把需求填一次，我們代發公開招標。創作者會帶著
             <strong>報價 / 檔期 / 作品集</strong> 來投標，你只需要挑最適合的合作。
           </p>
 
           <div class="trial">
-            <span class="pill">試營運｜即日起～2026.12.31</span>
-            <span>（先卡位，先贏）</span>
+            <span class="pill">試營運｜即日起～2026.03.31</span>
+            <span class="muted">（先卡位，先贏）</span>
           </div>
 
           <div class="actions">
-            <a class="btn primary" id="ctaForm" href="#" target="_blank" rel="noreferrer">掃碼/點我發起招標</a>
-            <a class="btn" id="ctaList" href="#" target="_blank" rel="noreferrer">先看公開名單</a>
+            <a class="btn primary" id="ctaForm" href="#" target="_blank" rel="noreferrer">發起招標</a>
+            <a class="btn" id="ctaList" href="#" target="_blank" rel="noreferrer">看公開名單</a>
             <a class="btn" id="ctaPost" href="#" target="_blank" rel="noreferrer">看全文說明</a>
+            <a class="btn" id="ctaDonateTop" href="#" target="_blank" rel="noreferrer">斗內支持</a>
           </div>
-        </div>
+        </section>
 
-        <div class="card heroSide">
+        <aside class="card heroSide" aria-label="流程與快速入口">
           <div>
             <div class="miniTitle">流程很短，但很有效</div>
             <div class="steps">
               <div class="step">
                 <div class="num">1</div>
-                <p><strong>你填需求</strong><br/>用途、預算、交期、風格參考寫清楚就行。</p>
+                <p><strong>你填需求</strong><br />用途、預算、交期、風格參考寫清楚就行。</p>
               </div>
               <div class="step">
                 <div class="num">2</div>
-                <p><strong>公開招標</strong><br/>我們代發招標，讓繪師看見你。</p>
+                <p><strong>公開招標</strong><br />我們代發，讓合適的人看見你。</p>
               </div>
               <div class="step">
                 <div class="num">3</div>
-                <p><strong>繪師投標</strong><br/>帶著報價／檔期／作品集來找你。</p>
+                <p><strong>創作者投標</strong><br />帶著報價／檔期／作品集來找你。</p>
               </div>
               <div class="step">
                 <div class="num">4</div>
-                <p><strong>你選合作</strong><br/>選最適合的，不用再盲猜。</p>
+                <p><strong>你選合作</strong><br />選最適合的，不用再盲猜。</p>
               </div>
             </div>
           </div>
 
-          <div class="qrBox" aria-label="快速入口">
-            <div class="qrRow">
-              <strong class="qrTitle">快速入口</strong>
-              <span class="copy">（把連結放到 Bio / 置頂）</span>
+          <div class="quickBox">
+            <div class="quickRow">
+              <strong class="quickTitle">快速入口</strong>
+              <span class="copy">（適合放 Bio / 置頂）</span>
             </div>
-            <div class="qrBtns">
+            <div class="quickBtns">
               <a class="btn primary" id="miniForm" href="#" target="_blank" rel="noreferrer">發起招標</a>
               <a class="btn" id="miniList" href="#" target="_blank" rel="noreferrer">公開名單</a>
               <a class="btn" id="miniDonate" href="#" target="_blank" rel="noreferrer">斗內支持</a>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
 
+      <!-- How -->
       <section id="how">
         <div class="sectionTitle">
           <h2>你會省下的，不只是時間</h2>
-          <p>把「找繪師」變成「讓繪師來找你」</p>
+          <p>把「找人」變成「讓人來找你」</p>
         </div>
 
         <div class="grid3">
           <div class="feat">
             <h3>不用再一個個問檔期</h3>
-            <p>你只填一次需求，繪師用投標回你，回覆品質直接升級。</p>
+            <p>你只填一次需求，投標回覆自帶關鍵資訊，效率直接拉滿。</p>
           </div>
           <div class="feat">
-            <h3>回覆自帶關鍵資訊</h3>
-            <p>報價、可接時間、作品集一次到位，不再來回消耗。</p>
+            <h3>回覆更「可比價」</h3>
+            <p>報價、可接時間、作品集一次到位，決策成本下降。</p>
           </div>
           <div class="feat">
-            <h3>你負責挑「最適合」</h3>
-            <p>你要的是匹配度，不是拼運氣。選對人，後面才順。</p>
+            <h3>你只需要挑最適合的</h3>
+            <p>不是拼運氣，是拼匹配度。選對人，後面才順。</p>
           </div>
         </div>
       </section>
 
+      <!-- Categories -->
       <section id="categories">
         <div class="sectionTitle">
           <h2>可招標項目</h2>
@@ -133,6 +144,7 @@
           <span class="chip">人物插畫</span>
           <span class="chip">頭貼</span>
           <span class="chip">Twitch 版面／介紹欄</span>
+          <span class="chip">程式相關委託</span>
         </div>
 
         <div class="ctaRow">
@@ -141,174 +153,308 @@
           <a class="btn" id="ctaDonate" href="#" target="_blank" rel="noreferrer">斗內支持</a>
         </div>
       </section>
-<section id="faq">
-  <div class="sectionTitle">
-    <h2>常見問題</h2>
-    <p>按分頁只看你需要的那區</p>
-  </div>
 
-  <!-- Tabs -->
-  <div class="tabs" role="tablist" aria-label="FAQ 分類">
-    <button class="tab is-active" role="tab" aria-selected="true" aria-controls="faq-common" id="tab-common" data-tab="common">
-      共同
-    </button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="faq-client" id="tab-client" data-tab="client">
-      委託方
-    </button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="faq-artist" id="tab-artist" data-tab="artist">
-      繪師
-    </button>
-  </div>
+      <!-- Partners -->
+      <section id="partners">
+        <div class="sectionTitle">
+          <h2>可投標者名錄</h2>
+          <p>供委託方快速確認「誰能接」</p>
+        </div>
 
-  <!-- Panels -->
-  <div class="tabPanels">
-    <!-- 共同 -->
-    <div class="tabPanel is-active" role="tabpanel" id="faq-common" aria-labelledby="tab-common" data-panel="common">
-      <div class="faqList">
-        <details class="faqItem">
-          <summary>
-            <span class="badge">定位</span>
-            <span class="q">本所提供哪些服務？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>招標公告</li>
-              <li>需求整理（把委託內容整理成可投標格式）</li>
-              <li>媒合對接（協助委託方與繪師接上線、更新標案狀態）</li>
-              <li>第三方見證與代為見證留存合約（見證/紀錄保存）</li>
-            </ul>
+        <div class="partnerCard">
+          <div class="partnerHead">
+            <div>
+              <div class="partnerName">
+                阿熊 <span class="partnerRole">類外包合作｜工程 / 小設計 / 動畫</span>
+              </div>
+              <div class="partnerTags" aria-label="能力標籤">
+                <span class="tag">Discord Bot</span>
+                <span class="tag">OBS 網頁插件</span>
+                <span class="tag">Twitch Bot</span>
+                <span class="tag">After Effects</span>
+              </div>
+            </div>
+
+            <div class="partnerActions">
+              <a class="btn" id="partnerAxbInfo" href="#" target="_blank" rel="noreferrer">更多資訊</a>
+            </div>
           </div>
-        </details>
 
-        <details class="faqItem">
-          <summary>
-            <span class="badge">邊界</span>
-            <span class="q">本所不提供／不介入哪些事？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li><strong>不代為議價</strong>：報價與內容取捨由雙方自行談定</li>
-              <li><strong>不代管金流</strong>：不收代付款、不做第三方保管、不處理分期/退款</li>
-              <li><strong>不提供合約保證</strong>：不擔保交期、品質或履約結果</li>
-              <li><strong>不介入授權判定</strong>：商用/買斷/二改/展示等由雙方自行確認</li>
-              <li><strong>不處理糾紛裁決</strong>：不作仲裁與責任歸屬判定（僅可協助下架、轉達、提醒留存紀錄）</li>
-            </ul>
-            <p class="note">
-              實際委託合作（報價、排程、交付、修改、授權、付款）由 <strong>委託方 ↔ 繪師</strong> 自行協議與負責。
-            </p>
+          <div class="partnerSummary">
+            以「研究 → 優化」兩階段承接：先用生成式 AI 在短時間驗證可行性，再人工優化效能與體驗（含 UI、響應、架構調整）。
           </div>
-        </details>
 
-        <details class="faqItem">
-          <summary>
-            <span class="badge">爭議</span>
-            <span class="q">如果發生糾紛怎麼辦？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>請先由 <strong>委託方與繪師</strong> 依對話紀錄協調</li>
-              <li>本所原則不介入金流與合約裁定；必要時可協助 <strong>轉達、下架、提醒留存證據</strong></li>
-            </ul>
+          <details class="partnerDetails">
+            <summary>展開完整受任範圍／收費方式／委託等級</summary>
+            <div class="partnerBody">
+              <div class="partnerGrid">
+                <div class="partnerCol">
+                  <h4>可受任項目</h4>
+                  <ul>
+                    <li>
+                      程式相關委託
+                      <ul>
+                        <li>Discord Bot：API v1（前綴指令如 <code>!command</code>）、API v2（斜線指令如 <code>/command</code>）</li>
+                        <li>OBS 網頁小插件（有素材通常都能做）</li>
+                        <li>Twitch Bot（包含複雜演算法賭博機器人、Discord Twitch 通知機器人等）</li>
+                        <li>其他：研究階段／優化階段（效能、加速響應、圖形化 UI 等）</li>
+                      </ul>
+                    </li>
+                    <li>簡易式平面設計</li>
+                    <li>簡單特效動畫（After Effects，擅長透過 JavaScript 做公式化演算）</li>
+                    <li>雜談頁面／遊戲頁面（制式素材＋可自定義素材）</li>
+                  </ul>
+                </div>
+
+                <div class="partnerCol">
+                  <h4>收費標準（概念）</h4>
+                  <ul>
+                    <li>依研究成本、開發成本與時長推估單位數量報價</li>
+                    <li>例：研究 800 + 開發 2,500 + 優化 1,000 → 合計 4,300</li>
+                    <li>招標所外包：可依專案難度動態調整成本結構，嘗試降低委託人開銷或評估平台抽成空間</li>
+                  </ul>
+
+                  <h4>聲明</h4>
+                  <p class="note">
+                    訂製功能可作為後續其他委託之研究素材之一；「功能多寡 ↔ 成本」通常正相關。價格可談，以快樂合作為主。
+                  </p>
+                </div>
+              </div>
+
+              <div class="partnerColWide">
+                <h4>委託等級（摘要）</h4>
+                <ul>
+                  <li><strong>S 級委託</strong>：優先級由左到右（個人判斷 → 網路負評少於正評 → 招標所成員委託 → 招標所外包 → 第一次合作）</li>
+                  <li><strong>普通級</strong>：以保護雙方為目的，嚴格執行流程與交付規則</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="partnerFoot">
+            <span class="mutedSmall">更多資訊：</span>
+            <a class="inlineLink" id="partnerAxbInfo2" href="#" target="_blank" rel="noreferrer">www.laser-base.com/ruwayhsu</a>
           </div>
-        </details>
-      </div>
+        </div>
+
+        <div class="hintBox">
+          想加入名錄或提供建議？可到 <a class="inlineLink" href="#feedback">反饋區</a> 留言，我們會整理更新。
+        </div>
+      </section>
+
+      <!-- Public list preview -->
+      <section id="list-preview">
+        <div class="sectionTitle">
+          <h2>公開名單預覽</h2>
+          <p>更新 Google Sheets 後，這裡會同步更新（內嵌預覽）</p>
+        </div>
+
+        <div class="previewCard">
+          <div class="previewHead">
+            <div class="previewTitle">公開招標名單</div>
+            <div class="previewActions">
+              <a class="btn" id="openListBtn" href="#" target="_blank" rel="noreferrer">開新視窗查看</a>
+              <button class="btn" id="refreshListBtn" type="button">手動刷新</button>
+            </div>
+          </div>
+
+          <div class="frameWrap" aria-label="公開名單預覽">
+            <iframe
+              id="listPreviewFrame"
+              title="公開招標名單預覽"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+          </div>
+
+          <div class="previewHint">
+            這不是截圖：它是表格的公開嵌入預覽。你更新 Sheets，網站就跟著更新（可能會有短暫快取，已加定時刷新）。
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ (Tabs) -->
+      <section id="faq">
+        <div class="sectionTitle">
+          <h2>常見問題</h2>
+          <p>按分頁只看你需要的那區</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="FAQ 分類">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="faq-common" id="tab-common" data-tab="common">
+            共同
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="faq-client" id="tab-client" data-tab="client">
+            委託方
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="faq-artist" id="tab-artist" data-tab="artist">
+            繪師
+          </button>
+        </div>
+
+        <div class="tabPanels">
+          <!-- 共同 -->
+          <div class="tabPanel is-active" role="tabpanel" id="faq-common" aria-labelledby="tab-common" data-panel="common">
+            <div class="faqList">
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">定位</span>
+                  <span class="q">本所提供哪些服務？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>招標公告</li>
+                    <li>需求整理（把委託內容整理成可投標格式）</li>
+                    <li>媒合對接（協助委託方與繪師接上線、更新標案狀態）</li>
+                    <li>提供第三方見證與代為見證留存合約（見證/紀錄保存）</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">邊界</span>
+                  <span class="q">本所不提供／不介入哪些事？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li><strong>不代為議價</strong>：報價與內容取捨由委託方與繪師自行談定</li>
+                    <li><strong>不代管金流</strong>：不收代付款、不做第三方保管、不處理分期/退款</li>
+                    <li><strong>不提供合約保證</strong>：不擔保交期、品質或履約結果</li>
+                    <li><strong>不介入授權判定</strong>：商用/買斷/二改/公開展示等授權條款由雙方自行確認</li>
+                    <li><strong>不處理糾紛裁決</strong>：不作仲裁與責任歸屬判定（僅可協助下架、轉達、提醒留存紀錄）</li>
+                  </ul>
+                  <p class="note">
+                    實際委託合作（報價、排程、交付、修改、授權、付款）由 <strong>委託方 ↔ 繪師</strong> 自行協議與負責。
+                  </p>
+                </div>
+              </details>
+
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">爭議</span>
+                  <span class="q">如果發生糾紛怎麼辦？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>請先由 <strong>委託方與繪師</strong> 依對話紀錄協調</li>
+                    <li>本所原則不介入金流與合約裁定；必要時可協助 <strong>轉達、下架、提醒留存證據</strong></li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- 委託方 -->
+          <div class="tabPanel" role="tabpanel" id="faq-client" aria-labelledby="tab-client" data-panel="client">
+            <div class="faqList">
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">填寫</span>
+                  <span class="q">怎麼填需求才會比較快收到有效投標？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>用途、預算範圍、希望交期（越清楚越快）</li>
+                    <li>風格參考（連結/圖片/關鍵字）</li>
+                    <li>差分/背景/交付格式（PNG/PSD/分層）有就寫</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">狀態</span>
+                  <span class="q">選定合作後怎麼避免繼續被投標？</span>
+                </summary>
+                <div class="a">
+                  <p>請通知主辦更新標案狀態（已得標/停止招標），避免重複投標。</p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- 繪師 -->
+          <div class="tabPanel" role="tabpanel" id="faq-artist" aria-labelledby="tab-artist" data-panel="artist">
+            <div class="faqList">
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">投標</span>
+                  <span class="q">投標建議要包含哪些內容？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>報價區間／檔期／作品集連結</li>
+                    <li>付款節點（簡述）／修改規則（簡述）</li>
+                    <li>需求不明確時：先問 1–3 個關鍵問題再報價</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">費用</span>
+                  <span class="q">試營運與手續費怎麼算？用途是什麼？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>標案成立後（雙方確認合作並開始委託）：</li>
+                    <li><strong>試營運期間</strong>：手續費採自由樂捐（由繪師自行決定）</li>
+                    <li><strong>正式營運</strong>：收取最終得標金額之 5%（例：400 → 420）</li>
+                  </ul>
+                  <p class="note">用途：平台維護與管理成本、以及第三方見證/紀錄保存等服務。</p>
+                </div>
+              </details>
+
+              <details class="faqItem">
+                <summary>
+                  <span class="badge">規範</span>
+                  <span class="q">有哪些基本行為規範？</span>
+                </summary>
+                <div class="a">
+                  <ul>
+                    <li>禁止抄襲、冒充他人作品、侵權內容（含未授權商用素材）</li>
+                    <li>請勿惡意砍價、惡意搶單、或以不實檔期/能力誤導委託方</li>
+                    <li>若已接案，請主動告知主辦更新狀態（避免重複投標）</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+      <section id="feedback">
+        <div class="sectionTitle">
+          <h2>反饋／建議</h2>
+          <p>歡迎留下回饋，讓我們更加進步</p>
+        </div>
+
+        <div class="feedbackCard">
+          <div class="feedbackText">
+            有遇到流程卡卡、想新增功能、或希望我們改進的地方，都很歡迎告訴我們。
+            <span class="mutedSmall">（一句話也 OK）</span>
+          </div>
+
+          <div class="feedbackActions">
+            <a class="btn primary" id="ctaFeedback" href="#" target="_blank" rel="noreferrer">留下反饋</a>
+            <a class="btn" id="ctaForm3" href="#" target="_blank" rel="noreferrer">我現在要發起招標</a>
+            <a class="btn" id="ctaList3" href="#" target="_blank" rel="noreferrer">回到公開名單</a>
+          </div>
+        </div>
+      </section>
     </div>
+  </header>
 
-    <!-- 委託方 -->
-    <div class="tabPanel" role="tabpanel" id="faq-client" aria-labelledby="tab-client" data-panel="client">
-      <div class="faqList">
-        <details class="faqItem">
-          <summary>
-            <span class="badge">填寫</span>
-            <span class="q">怎麼填需求才會比較快收到有效投標？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>用途、預算範圍、希望交期（越清楚越快）</li>
-              <li>風格參考（連結/圖片/關鍵字）</li>
-              <li>差分/背景/交付格式（PNG/PSD/分層）有就寫</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="faqItem">
-          <summary>
-            <span class="badge">聯絡</span>
-            <span class="q">繪師會怎麼投標/聯絡我？</span>
-          </summary>
-          <div class="a">
-            <p>繪師通常會使用你在需求中留下的聯絡方式直接私訊，並附上報價/檔期/作品集等資訊。</p>
-          </div>
-        </details>
-
-        <details class="faqItem">
-          <summary>
-            <span class="badge">狀態</span>
-            <span class="q">選定合作後怎麼避免繼續被投標？</span>
-          </summary>
-          <div class="a">
-            <p>請通知主辦更新標案狀態（已得標/停止招標），避免繪師重複投標。</p>
-          </div>
-        </details>
-      </div>
-    </div>
-
-    <!-- 繪師 -->
-    <div class="tabPanel" role="tabpanel" id="faq-artist" aria-labelledby="tab-artist" data-panel="artist">
-      <div class="faqList">
-        <details class="faqItem">
-          <summary>
-            <span class="badge">投標</span>
-            <span class="q">投標建議要包含哪些內容？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>報價區間／檔期／作品集連結</li>
-              <li>付款節點（簡述）／修改規則（簡述）</li>
-              <li>若需求不明確，可先問 1–3 個關鍵問題再報價</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="faqItem">
-          <summary>
-            <span class="badge">費用</span>
-            <span class="q">試營運與手續費怎麼算？用途是什麼？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>標案成立後（雙方確認合作並開始委託）：</li>
-              <li><strong>試營運期間</strong>：手續費採自由樂捐（由繪師自行決定）</li>
-              <li><strong>正式營運</strong>：收取最終得標金額之 5%（例：如得標價400+5%抽佣=實付金額為420）</li>
-            </ul>
-            <p class="note">用途：平台維護與管理成本、以及第三方見證/紀錄保存等服務。</p>
-          </div>
-        </details>
-
-        <details class="faqItem">
-          <summary>
-            <span class="badge">規範</span>
-            <span class="q">有哪些基本行為規範？</span>
-          </summary>
-          <div class="a">
-            <ul>
-              <li>禁止抄襲、冒充他人作品、侵權內容（含未授權商用素材）</li>
-              <li>請勿惡意砍價、惡意搶單、或以不實檔期/能力誤導委託方</li>
-              <li>若已接案，請主動告知主辦更新狀態（避免重複投標）</li>
-            </ul>
-          </div>
-        </details>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <!-- Footer -->
   <footer>
     <div class="wrap">
       <div class="footerRow">
         <div>
           <div class="footerBrand">界月委託招標所</div>
           <div class="footerTagline">你提需求，我們幫你公開招標。</div>
+          <div class="footerSmall">© <span id="year"></span></div>
         </div>
 
         <div class="links" aria-label="外部連結">
@@ -316,6 +462,7 @@
           <a id="fList" href="#" target="_blank" rel="noreferrer">公開名單</a>
           <a id="fPost" href="#" target="_blank" rel="noreferrer">全文說明</a>
           <a id="fDonate" href="#" target="_blank" rel="noreferrer">斗內支持</a>
+          <a id="fFeedback" href="#" target="_blank" rel="noreferrer">反饋</a>
         </div>
       </div>
     </div>
