@@ -424,28 +424,52 @@
         </div>
       </section>
 
-      <!-- Feedback -->
       <section id="feedback">
-        <div class="sectionTitle">
-          <h2>反饋／建議</h2>
-          <p>歡迎留下回饋，讓我們更加進步</p>
-        </div>
-
-        <div class="feedbackCard">
-          <div class="feedbackText">
-            有遇到流程卡卡、想新增功能、或希望我們改進的地方，都很歡迎告訴我們。
-            <span class="mutedSmall">（一句話也 OK）</span>
-          </div>
-
-          <div class="feedbackActions">
-            <a class="btn primary" id="ctaFeedback" href="#" target="_blank" rel="noreferrer">留下反饋</a>
-            <a class="btn" id="ctaForm3" href="#" target="_blank" rel="noreferrer">我現在要發起招標</a>
-            <a class="btn" id="ctaList3" href="#" target="_blank" rel="noreferrer">回到公開名單</a>
-          </div>
-        </div>
-      </section>
+  <div class="wrap">
+    <div class="sectionTitle">
+      <h2>反饋 / 建議</h2>
+      <p>你的一句話，會直接變成我們下一次更新的方向。</p>
     </div>
-  </header>
+
+    <div class="feedbackCard card">
+      <form id="feedbackForm" class="feedbackForm" action="https://formspree.io/f/mvzrbwwy" method="POST">
+        <!-- honeypot 防機器人 -->
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+
+        <label class="field">
+          <span>建議內容（必填）</span>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            placeholder="例如：公開名單希望能加搜尋 / 希望增加更多委託分類 / 哪裡看不懂…"
+          ></textarea>
+        </label>
+
+        <div class="fieldRow">
+          <label class="field">
+            <span>稱呼（選填）</span>
+            <input name="name" type="text" placeholder="怎麼稱呼你？" />
+          </label>
+
+          <label class="field">
+            <span>聯絡方式（選填）</span>
+            <input name="contact" type="text" placeholder="Email / X / 其他（需要回覆再填）" />
+          </label>
+        </div>
+
+        <input type="hidden" name="_subject" value="界月委託招標所｜網站反饋" />
+
+        <div class="fieldActions">
+          <button class="btn primary" type="submit">送出建議</button>
+          <button class="btn" type="button" id="feedbackClearBtn">清空</button>
+          <p id="feedbackStatus" class="mutedSmall" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer>

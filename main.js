@@ -54,6 +54,10 @@ const byId = (id) => document.getElementById(id);
   setHref("ctaFeedback", URLS.FEEDBACK_URL);
   setHref("ctaForm3", URLS.FORM_URL);
   setHref("ctaList3", URLS.LIST_URL);
+  // Feedback（不要導到 Formspree endpoint）
+setHref("ctaFeedback", "#feedback");
+setHref("fFeedback", "#feedback");
+
 
   // Footer
   setHref("fForm", URLS.FORM_URL);
@@ -156,4 +160,32 @@ const byId = (id) => document.getElementById(id);
   }, { threshold: 0.12 });
 
   targets.forEach(el => io.observe(el));
+})();
+/* ========= Feedback form (Formspree POST) ========= */
+(() => {
+  const form = document.getElementById("feedbackForm");
+  const status = document.getElementById("feedbackStatus");
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (status) status.textContent = "送出中…";
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      });
+
+      if (res.ok) {
+        form.reset();
+        if (status) status.textContent = "收到！感謝你的反饋🫶";
+      } else {
+        if (status) status.textContent = "送出失敗，請稍後再試或改用其他方式。";
+      }
+    } catch {
+      if (status) status.textContent = "網路似乎不穩，請稍後再試。";
+    }
+  });
 })();
